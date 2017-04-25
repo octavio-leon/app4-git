@@ -1,7 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function (e){
-	 document .addEventListener ("deviceready".function(){
+	 document .addEventListener ("deviceready",function(){
 		  $('#disp table td').eq(3).text(device.model);
 		  $('#disp table td').eq(5).text(device.cordova);
 		  $('#disp table td').eq(7).text(device.platform);
@@ -9,18 +9,18 @@ $(document).ready(function (e){
 		  $('#disp table td').eq(11).text(device.uuid);
 		 document.addEventListener("pause",function(){
 			 escribehistoria ('la app se pauso');
-		 },false(;//pause
+		 },false);//pause
 		 document.addEventListener("resume",function(){
 			 escribehistoria ('la app se reinicio');
-		 },false(;//resume
+		 },false);//resume
 		 document.addEventListener("online",function(){
 			 escribehistoria ('la app se conecto auna red');
-		 },false(;//se conecto
+		 },false);//se conecto
 		  document.addEventListener("offline",function(){
 			 escribehistoria ('la app se desconecto de la red');
-		 },false(;//se desconecto 
+		 },false);//se desconecto 
 		  
-		 },false(;//ready device
+		 },false);//ready device
 		 
 });//document
 function escribehistoria(accion){
